@@ -1,0 +1,15 @@
+.{
+    .name = "zig-playground",
+    .version = "0.0.0",
+    .dependencies = .{
+        .@"microzig/build" = .{ .path = "microzig/build" },
+        .@"microzig/bsp/raspberrypi/rp2040" = .{ .path = "microzig/rp2040" },
+    },
+    
+    .paths = .{
+        "README.md",
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
