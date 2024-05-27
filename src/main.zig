@@ -15,6 +15,15 @@ pub const microzig_options = .{
     .logFn = rp2040.uart.log,
 };
 
+// Waveshare RP2040-LCD-0.96 Rev 2.0
+// https://www.waveshare.com/wiki/RP2040-LCD-0.96
+// #define LCD_RST_PIN  12
+// #define LCD_DC_PIN   8
+// #define LCD_BL_PIN   13 
+// #define LCD_CS_PIN   9
+// #define LCD_CLK_PIN  10
+// #define LCD_MOSI_PIN 11
+
 var lcd = lcd_driver.ST7735{ 
     .config = lcd_driver.Config{ 
         .spi = spi1,
